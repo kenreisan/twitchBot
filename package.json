@@ -1,0 +1,17 @@
+{
+  "name": "twitchbot",
+  "version": "0.0.1",
+  "description": "Twitch helping chatbot",
+  "main": "src",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Kenrei",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "tmi.js": "^1.5.0"
+  }
+}
