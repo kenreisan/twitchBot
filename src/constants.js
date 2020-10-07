@@ -1,4 +1,13 @@
 export const MONSTUOS = [
+    ['ASTALOS',10],
+    ['GAMMOTH',20],
+    ['GLAVENUS',15],
+    ['MIZUTSUNE',12],
+]
+
+
+/*
+export const MONSTUOS = [
     'AGNAKTOR',
     'ARZUROS',
     'ARZUROS ÁMBAR',
@@ -93,3 +102,4 @@ export const MONSTUOS = [
     'FATALIS BLANCO',
     'ALATREON',    
 ]
+*/
