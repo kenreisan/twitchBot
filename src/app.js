@@ -9,27 +9,10 @@ import Hunter from './hunter.js'
 import Monster from './monster.js'
 
 let sign = '!'
-let greetingsBot = [
-    ['tetsuo_rafa',false],
-    ['krsdonovan',false],
-    ['kurama8525',false],
-    ['kenrei_bot',false],
-    ['skygrinder3070',false],
-    ['leserrb267',false],
-    ['kenreisan',false]
-]
 
 var coolDown = 0;
 var coolDownCounter = 3;
-var newGreetings = [
-    'tetsuo_rafa',
-    'krsdonovan',
-    'kurama8525',
-    'kenrei_bot',
-    'skygrinder3070',
-    'leserrb267',
-    'kenreisan'
-];
+
 
 /*
 El siguiente codigo es la coneccion cliente de nuestro
@@ -87,7 +70,7 @@ client.on('message', (channel, userstate, message, self) => {
     if (command.substring(0,3) === sign +'1d'){
         var diceSide = command.substring(3,5);
         if (!isNaN(diceSide))
-            client.action(channel,':) ' +  userName + ' lanza un dado de '+ diceSide + ' y obtiene un ' + rollDice(diceSide));
+            client.action(channel,':) ' +  userName + ' lanza un dado de '+ diceSide + ' caras y obtiene un ' + rollDice(diceSide));
     }
 
     if (command.substring(0,3) === sign + '2d'){
@@ -121,7 +104,7 @@ function rollTwoDice(sides, name){
         if (total === (diceSide * 2))
             return (':O ' + name + ' lanzamiento perfecto!!! obtuviste ' + diceOne + ' en los 2 dados~! para un total de ' + total);
         else
-            return (':) ' + name + ' lanza dos dados de '+ diceSide + ' y obtiene un ' + diceOne + ' y  un ' + diceTwo + ' para un total de ' + total);
+            return (':) ' + name + ' lanza dos dados de '+ diceSide + ' caras y obtiene un ' + diceOne + ' y  un ' + diceTwo + ' para un total de ' + total);
     }
     return (':/ Perdón ' + name + ' no entendí que dado me pediste lanzar...')
 }
