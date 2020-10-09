@@ -1,4 +1,4 @@
-export const MONSTUOS = [
+export const MONSTERLIST = [
     ['ASTALOS',10],
     ['GAMMOTH',20],
     ['GLAVENUS',15],
